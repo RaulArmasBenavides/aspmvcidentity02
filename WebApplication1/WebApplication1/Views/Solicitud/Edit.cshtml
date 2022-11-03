@@ -1,0 +1,1210 @@
+﻿@model WebApplication1.Models.Solicitud
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<div>
+    <h4>Solicitud</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NroEmpresa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NroEmpresa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NroSolicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NroSolicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSolicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumSolicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodSSCC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodSSCC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumActualiz)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumActualiz)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumValoSoli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumValoSoli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipSolicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipSolicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StpSolicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StpSolicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipGeneracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipGeneracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UbiMedidor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UbiMedidor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodIngreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodIngreso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecIngresoLDS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecIngresoLDS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumExpedienteLDS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumExpedienteLDS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecIngresoPro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecIngresoPro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumExpedientePro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumExpedientePro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoSolicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstadoSolicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EtapaProceso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EtapaProceso)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EtapaObra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EtapaObra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EstadoObra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EstadoObra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Motivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Motivo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Atencion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Atencion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PotenciaContratad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PotenciaContratad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodTarifa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodTarifa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CndRutina)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CndRutina)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Observaciones)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Observaciones)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumCarta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumCarta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IndPtoEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IndPtoEntrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipPtoEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipPtoEntrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumPtoEntrega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumPtoEntrega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumLlave)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumLlave)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodSet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodSet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumAlmd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumAlmd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodTension)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodTension)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipDocumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipDocumento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumDocumento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumDocumento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumPedido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumPedido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumResolucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumResolucion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipResolucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipResolucion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecResolucion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecResolucion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodTipoId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodTipoId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EntreCalles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EntreCalles)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumServiciosSol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumServiciosSol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolEntCourier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolEntCourier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecEntCourier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecEntCourier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodCourier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodCourier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumDocCourier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumDocCourier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoDerivacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoDerivacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CcssOrigResp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CcssOrigResp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolOrigResp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolOrigResp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MotRechazo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MotRechazo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumTramo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumTramo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumAcometida)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumAcometida)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EntregadoPor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EntregadoPor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConstanciaRec)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConstanciaRec)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VisitasRec)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VisitasRec)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ComentarioRec)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ComentarioRec)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecAdmisible)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecAdmisible)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TmpAtencionLds)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TmpAtencionLds)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TmpAtencionLegal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TmpAtencionLegal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroSolicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroSolicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MotNoAtencion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MotNoAtencion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CambioEquipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CambioEquipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirPostal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirPostal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodDisPostal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodDisPostal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CircuitoInt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CircuitoInt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TmpEjecucionLDS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TmpEjecucionLDS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TmpEjecucionLega)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TmpEjecucionLega)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IndTotaliz)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IndTotaliz)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EtapaAnterior)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EtapaAnterior)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroTelefono2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroTelefono2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TasCambio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TasCambio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecCambioSol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecCambioSol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TasCambioSol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TasCambioSol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodContratista)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodContratista)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioHh)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioHh)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IndVersion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IndVersion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoSumin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoSumin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObsComercial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObsComercial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PgRegEnPostgres)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PgRegEnPostgres)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecCumpleReq)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecCumpleReq)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaPuser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaPuser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TmpoOfreCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TmpoOfreCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TmpoElabProyecto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TmpoElabProyecto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdTramite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdTramite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdExpediente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdExpediente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDireccionObra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdDireccionObra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdDireccionClien)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdDireccionClien)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdRefgeoSst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdRefgeoSst)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecOfreCli)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecOfreCli)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IndFocFonoluz)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IndFocFonoluz)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolRegistrador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolRegistrador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecRegistrador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecRegistrador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolAsignador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolAsignador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolAsignado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolAsignado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecAsignado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecAsignado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolProcesador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolProcesador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecProcesador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecProcesador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolAprobador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolAprobador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecAprobador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecAprobador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolPagador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolPagador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecPagador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecPagador)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecRecepcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecRecepcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolRecepcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolRecepcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolInterrupcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolInterrupcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecInterrupcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecInterrupcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecActivacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecActivacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolDerivacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolDerivacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecDerivacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecDerivacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rolRechazo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rolRechazo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecRechazo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecRechazo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rol)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rol)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumExpCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumExpCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomClienteRedes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomClienteRedes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSuministro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumSuministro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSuministroAnt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumSuministroAnt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSuministroPos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumSuministroPos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumSuminisAnt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumSuminisAnt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumValoTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumValoTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IndTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IndTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EtapaTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EtapaTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecRegistradorTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecRegistradorTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolRegistradorTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolRegistradorTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolAsignadoTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolAsignadoTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecAsignadoTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecAsignadoTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolAsignadorTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolAsignadorTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecProcesadorTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecProcesadorTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolProcesadorTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolProcesadorTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecAprobadorTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecAprobadorTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolAprobadorTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolAprobadorTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EtapaAnteriorTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EtapaAnteriorTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FecCambioTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FecCambioTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TasCambioTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TasCambioTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumeroTD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumeroTD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripcionTrabajo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripcionTrabajo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ObservacionesTrabajo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ObservacionesTrabajo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MensajeRetorno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MensajeRetorno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaProgramacionInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaProgramacionInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaProgramacionFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaProgramacionFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RolAsignadoSolicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RolAsignadoSolicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaOriReq)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaOriReq)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCumpleReqSuminSolic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCumpleReqSuminSolic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaOri)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaOri)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaLeyInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaLeyInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaLeyFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaLeyFin)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
