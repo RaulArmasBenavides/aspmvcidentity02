@@ -11,7 +11,7 @@ namespace WebApplication1.Models
             : base("name=TiendaContext")
         {
         }
-
+        public virtual DbSet<Categoria> Categorias { get; set; }
         public virtual DbSet<Producto> Productoes { get; set; }
         public virtual DbSet<TipoProducto> TipoProductoes { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }

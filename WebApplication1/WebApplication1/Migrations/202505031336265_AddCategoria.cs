@@ -1,9 +1,9 @@
-namespace WebApplication1.TiendaMigrations
+﻿namespace WebApplication1.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class AddCategoria : DbMigration
     {
         public override void Up()
         {
